@@ -1,0 +1,181 @@
+/* Estilos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+body{
+    background: #dddddf;
+    display: flex;
+    justify-content: center;
+}
+.base{
+    width: 100%;
+    max-width: 460px;
+    background: #fff;
+    box-shadow: 5px 5px 10px #0003;
+}
+.encabezado{
+    width: 100%;
+    background-image: url(../assets/Encabezado.jpg);
+    background-size: 100% auto;
+    background-position: center top;
+    display: flex;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+}
+.encabezado > .name{
+    display: block;
+    width: 100%;
+    margin-top: 70%;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: 'Great Vibes', cursive;
+}
+.encabezado > .text{
+    display: block;
+    width: 100%;
+    margin: 2vh 0;
+    text-align: center;
+    font-weight: 600;
+}
+.encabezado > .message{
+    display: block;
+    width: 80%;
+    margin: 0 auto 5vh;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Great Vibes', cursive;
+}
+.imgenPareja{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.imgenPareja > .franja{
+    width: 100%;
+    z-index: 1;
+}
+.imgenPareja > .imagen{
+    width: 100%;
+    margin: -28% 0;
+}
+.contenido{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenido > .novio{
+    display: block;
+    width: 80%;
+    margin: 0 auto -10px;
+    text-align: left;
+    font-size: 5rem;
+    font-family: 'Great Vibes', cursive;
+}
+.contenido > .medio{
+    display: block;
+    width: 80%;
+    margin: -10px auto;
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Great Vibes', cursive;
+}
+.contenido > .novia{
+    display: block;
+    width: 80%;
+    margin: -10px auto 0;
+    text-align: right;
+    font-size: 5rem;
+    font-family: 'Great Vibes', cursive;
+}
+.contenido > .invitacion{
+    display: block;
+    width: 90%;
+    margin: 5vh auto;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+}
+.contenido > .fecha{
+    display: block;
+    width: 100%;
+    margin: 2vh auto;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenido > .fecha > .mes{
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.contenido > .fecha > .dia, .contenido > .fecha > .ano{
+    display: block;
+    width: 100px;
+    height: 25px;
+    margin-top: 22px;
+    border-top: 2px solid #868bab;
+    border-bottom: 2px solid #868bab;
+}
+.contenido > .fecha > .numero{
+    display: block;
+    margin: 0 2vh;
+    color: #868bab;
+    font-size: 4rem;
+    font-family: 'Great Vibes', cursive;
+}
+.contenido > .direccion{    
+    display: block;
+    width: 100%;
+    margin: 1vh auto;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenido > .direccion > .hora{
+    display: block;
+    width: 100%;
+    font-size: 1.1rem;
+}
+.contenido > .direccion > .salon{
+    display: block;
+    width: 100%;
+    font-weight: 600;
+}
+.contenido > .direccion > .ubicacion{
+    display: block;
+    width: 100%;
+}
+.contenido > .direccion > #btnAddress{
+    display: block;
+    margin: 2vh auto 5vh;
+    background: #868bab;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 2vh;
+    box-shadow: 3px 3px 6px #868bab;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: .6s;
+}
+.contenido > .direccion > #btnAddress:hover{
+    scale: 1.1;
+}
+
+/* Responsive */
+@media (max-width: 780px) {    
+    .servicios > .container, .beneficios > .container{
+        justify-content: left;
+    }
+}
+@media (max-width: 870px) {
+    .inicio > #btnStart{
+        display: block;
+    }
+}
