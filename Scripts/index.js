@@ -10,10 +10,9 @@ $(document).ready( () => {
 
     const URLPARAMS = new URLSearchParams(window.location.search);
     
-    if (URLPARAMS.has('invitados') && URLPARAMS.has('cupos')) {
+    if (URLPARAMS.has('invitados')) {
         
         const FAMILIA = URLPARAMS.get('invitados');
-        const CUPO = URLPARAMS.get('cupos');
         const INVITADOS = FAMILIA.split(',');
         let html = ``;
         
@@ -23,7 +22,7 @@ $(document).ready( () => {
             
         }
 
-        $('.invitacion').html(`TENEMOS EL HONOR DE INVITARTE A NUESTRA BODA TE HEMOS RESERVADO ${CUPO} CUPOS PARA: ${html}`);
+        $('.invitacion').html(`TENEMOS EL HONOR DE INVITARTE A NUESTRA BODA TE HEMOS RESERVADO ${INVITADOS.length} CUPOS PARA: ${html}`);
 
     }
 
