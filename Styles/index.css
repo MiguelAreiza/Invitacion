@@ -9,6 +9,9 @@ body{
     display: flex;
     justify-content: center;
 }
+hr{
+    border: none;
+}
 .base{
     width: 100%;
     max-width: 460px;
