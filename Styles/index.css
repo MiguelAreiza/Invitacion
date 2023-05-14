@@ -100,10 +100,33 @@ hr{
     text-align: center;
     font-family: 'Urbanist', sans-serif;
 }
+.contenido > .recomendacion{
+    display: block;
+    width: 90%;
+    margin: 1vh auto;
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+}
+.contenido > #btnConfirm{
+    display: block;
+    margin: 2vh auto;
+    background: #868bab;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 2vh;
+    box-shadow: 3px 3px 6px #868bab;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: .6s;
+}
+.contenido > #btnConfirm:hover{
+    scale: 1.1;
+}
+
 .contenido > .fecha{
     display: block;
     width: 100%;
-    margin: 2vh auto;
+    margin: 4vh auto 2vh;
     text-align: center;
     font-family: 'Urbanist', sans-serif;
     display: flex;
