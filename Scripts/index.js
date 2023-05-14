@@ -3,18 +3,18 @@
 $(document).ready( () => {
 
     let sound = new Audio('../assets/Sound.mp3');
-    
-    Swal.fire({
-        title: '¿Deseas reproducir el sonido?',
-        icon: 'question',
-        showCancelButton: true,
-        confirmButtonText: 'Sí',
-        cancelButtonText: 'No'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            sound.play();
-        }
-    });
+    sound.play()
+    // Swal.fire({
+    //     title: '¿Deseas reproducir el sonido?',
+    //     icon: 'question',
+    //     showCancelButton: true,
+    //     confirmButtonText: 'Sí',
+    //     cancelButtonText: 'No'
+    // }).then((result) => {
+    //     if (result.isConfirmed) {
+    //         sound.play();
+    //     }
+    // });
     
     $('#btnAddress').click( () => {
 
