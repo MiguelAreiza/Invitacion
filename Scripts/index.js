@@ -2,6 +2,11 @@
 
 $(document).ready( () => {
 
+    setTimeout(() => {
+        let sonido = new Audio('../assets/Sound.mp3');
+        sonido.play();
+    }, 200);
+
     $('#btnAddress').click( () => {
 
         window.open('https://goo.gl/maps/N6tsnZdnDGwi2vhf8');
